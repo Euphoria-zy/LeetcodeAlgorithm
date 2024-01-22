@@ -1,7 +1,10 @@
 package com.zy.normalproblem;
 
 import java.util.*;
-
+/*
+*
+2342. 数位和相等数对的最大和: 数位和相等的数对中最大的和， 哈希表[HashMap]
+* */
 public class maximumSum_Medium {
     public static void main(String[] args) {
         int[] nums = new int[] {
