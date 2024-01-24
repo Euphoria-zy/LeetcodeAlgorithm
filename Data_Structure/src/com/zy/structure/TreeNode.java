@@ -1,5 +1,8 @@
 package com.zy.structure;
 
+/*
+* 二叉树节点数据结构
+* */
 public class TreeNode
 {
     public int val;

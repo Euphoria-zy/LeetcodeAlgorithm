@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @Description: 670. 最大交换
  * 给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。
  */
-public class maximumSwap_Medium {
+public class maximumSwap_670 {
     public static void main(String[] args) {
         int result = Solution_670.maximumSwap(98368);
         System.out.println(result);

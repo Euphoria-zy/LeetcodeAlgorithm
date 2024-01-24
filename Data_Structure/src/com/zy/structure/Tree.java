@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
-
+/*
+* 二叉树的构建，遍历
+* */
 public class Tree
 {
     public TreeNode root = null;
