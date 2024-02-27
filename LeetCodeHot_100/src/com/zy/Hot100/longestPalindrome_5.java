@@ -5,7 +5,7 @@ package com.zy.Hot100;
 * */
 public class longestPalindrome_5 {
     public static void main(String[] args) {
-
+        String s = Solution_5.longestPalindrome("ababad");
     }
 }
 class Solution_5 {
