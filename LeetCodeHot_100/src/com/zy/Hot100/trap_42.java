@@ -43,9 +43,9 @@ class Solution_42 {
         //return sum;
 
         //单调栈:
-        //1、维持一个单调栈，栈中单调减，即栈底为left，栈顶为top,则当栈在height[i]开始递增时，即height[i]>height[top]，可计算一次栈中的接水量.只有top位置可存水
+        //1、维持一个单调栈，栈中单调减，即栈底为left，栈顶为top,则当栈在height[i]开始递增时，即height[i]>height[top]，可计算一次栈中的接水量.此时top位置可存水
         //2、雨水量计算：宽度：i-left-1，高度min(height[left], height[i])-height[top]，只有top位置可存水
-        //3、计算一次后，弹出top，left称为新的top，重复2的计算直到栈为空
+        //3、计算一次后，弹出top，left成为新的top，重复2的计算直到栈为空
 
         Deque<Integer> stack = new ArrayDeque<>();
         int ans = 0;
