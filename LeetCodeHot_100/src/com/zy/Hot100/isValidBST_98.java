@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
-98. 验证二叉搜索树
+98. 验证二叉搜索树[深度优先搜索]
 给你一个二叉树的根节点 root ，判断其是否是一个有效的二叉搜索树。
 有效 二叉搜索树定义如下：
 节点的左子树只包含 小于 当前节点的数。
@@ -24,11 +24,11 @@ public class isValidBST_98 {
 
 class Solution_98 {
     public static boolean isValidBST(TreeNode root) {
-
         return isBST(root.left, Long.MIN_VALUE, root.val) && isBST(root.right, root.val, Long.MAX_VALUE);
     }
 
-    //中序遍历，判断序列是否有序
+    //1、中序遍历，判断序列是否有序
+    //2、深度优先搜索：判断左子树和右子树是否超过上下边界
     public static boolean isBST(TreeNode node, long lower, long upper){
         boolean flag1, flag2;
         flag1 = flag2 = true;
