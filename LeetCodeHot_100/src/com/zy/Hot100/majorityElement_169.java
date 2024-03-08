@@ -12,6 +12,7 @@ public class majorityElement_169 {
 
 class Solution_169 {
     public int majorityElement(int[] nums) {
+        //记录maxNum的次数
         int count = 1;
         int maxNum = nums[0];
         int n = nums.length;
@@ -21,6 +22,7 @@ class Solution_169 {
             if (nums[i] == maxNum) {
                 count++;
             } else {
+                //次数抵消
                 count--;
             }
         }
