@@ -84,7 +84,7 @@ class Solution_207 {
                 dfs(i);
         }
         ans2 = isValid;
-        return ans2
+        return ans2;
     }
 
     public static void dfs(int node) {
