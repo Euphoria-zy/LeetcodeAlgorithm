@@ -29,7 +29,7 @@ class Solution_238 {
             else
                 L[i] = L[i-1]*nums[i-1];
         }
-        for (int i = n-1 i >= 0; i++) {
+        for (int i = n-1; i >= 0; i++) {
             if (i == n-1)
                 R[i] = 1;
             else
