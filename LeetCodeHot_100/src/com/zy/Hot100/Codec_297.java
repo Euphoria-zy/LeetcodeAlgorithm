@@ -20,7 +20,7 @@ class Codec {
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         StringBuilder result = new StringBuilder();
-        dfs(root, result);
+        dfsSerialize(root, result);
         return result.toString();
     }
 
